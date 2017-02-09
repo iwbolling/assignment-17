@@ -6,7 +6,7 @@ $.getJSON("https://congress.api.sunlightfoundation.com/legislators?callback=?").
   var legisResults = serverRes.results;
   var legisStr = "";
   forEach(legisResults, function(legisEntry,index,arr){
-    legisStr = "<div class='legislator col-xs-6 col-md-4 col-lg-4'>"
+    legisStr = "<div class='legislator col-xs-12 col-sm-6 col-md-4 col-lg-4'>"
     legisStr +=   "<div class='legis-block thumbnail'>"
     legisStr +=     "<h3>" + legisEntry.first_name + " " + legisEntry.last_name + "</h3>";
     legisStr +=     "<h4>" + legisEntry.title + " — " + legisEntry.party + "-" + legisEntry.state_name;
